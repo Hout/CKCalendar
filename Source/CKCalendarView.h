@@ -26,17 +26,10 @@
 
 @end
 
-typedef enum {
-    startSunday = 1,
-    startMonday = 2,
-} CKCalendarStartDay;
-
 @interface CKCalendarView : UIView
 
-- (id)initWithStartDay:(CKCalendarStartDay)firstDay;
-- (id)initWithStartDay:(CKCalendarStartDay)firstDay frame:(CGRect)frame;
+- (id)initWithFrame:(CGRect)frame;
 
-@property (nonatomic) CKCalendarStartDay calendarStartDay;
 @property (nonatomic, strong) NSLocale *locale;
 
 @property (nonatomic, readonly) NSArray *datesShowing;
